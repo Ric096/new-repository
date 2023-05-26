@@ -1,0 +1,328 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  padding: 0;
+  line-height: 1.6;
+
+}
+
+.layout {
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+
+.header {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 120px;
+  border-bottom: 3px solid black;
+}
+
+.header .logo{
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  width: 30%;
+}
+
+.header .logo span{
+  display: block;
+  margin-right: 20px;
+  margin-left: 50px;
+  font-size: 60px;
+  color:#2e1b3d;
+  font-weight: bolder;
+}
+
+.header .logo h3 {
+  display: block;
+  width: 40px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 25px;
+  font-weight: 300;
+}
+
+.nav {
+  width: 60%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content:flex-end;
+  list-style: none;
+  margin: 0;
+}
+
+.nav ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: all 300ms;
+  font-weight: bold;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase; 
+}
+.active,
+nav ul li a:hover {
+  color: orangered;
+}
+
+.content {
+  min-height: auto;
+  width: 100%;
+}
+
+/* PAGINA DE INICIO */ 
+.home {
+  margin:8px;
+}
+.home h1{
+  font-family: -apple-system;
+  font-weight: 300;
+  font-size: 44px;
+  margin-bottom: 0;  
+}
+
+.home strong {
+  color:orangered;
+}
+
+.home h2{
+  color: #666;
+  font-weight: 200;
+  font-size: 24px;
+  margin-bottom: -4px;
+}
+
+.home a{
+  color: orangered;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.home .heading {
+  color:black;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.home p {
+  font-size: 18px;
+  color: #666;
+}
+.home .works {
+  background-color: #f6f6f6;  
+  height: auto;
+  width: 100%;
+
+}
+
+/* PAGINA DE SERVICIOS */
+
+.page {
+  /* margin-left: 8px; */
+  margin: 30px 8px;
+  
+}
+
+.page h1{
+  text-align: center;
+  font-size: 44px;
+  color:black;
+  margin-top:0;
+  font-weight: 500;
+}
+
+.page .services {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin:0 auto;
+  justify-content: center;
+  margin-bottom: 40px;
+
+}
+
+.page .services .service {
+  min-width: 40%;
+  margin:8px;
+  text-align: center;
+  padding: 4px; 
+  background-color: #333;
+  border-radius: 8px;
+  color:#b3b0b0;
+}
+
+.page .services .service:hover {
+  background-color:#b3b0b0;
+  color:#333;
+}
+
+/* PAGINA DE CONTACTO */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* min-width: 400px; */
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.form input[type="text"],
+ input[type="email"],
+ textarea{
+  padding: 8px;
+  width: 30%;
+  margin: 8px 5px;
+  font-size: 16px;
+  border:none;
+  background-color: #333;
+  border-radius: 4px;
+  color: #b3b0b0;
+  outline: none;
+}
+
+.form input[type="text"]::placeholder{
+  color:#b3b0b0;
+}
+
+.form input[type="email"]::placeholder{
+  color:#b3b0b0;
+}
+
+textarea::placeholder{
+  color:#b3b0b0;
+}
+
+.form input[type="submit"] {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius:4px;
+  width: 80px;
+  background-color: #333;
+  color:#b3b0b0;
+  border: none;
+  font-size:14px;
+  cursor:pointer
+}
+
+.form input[type="submit"]:hover {
+  background-color: orangered;
+  color: white;
+}
+
+/* PAGINA DE PORTAFOLIO */
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portafolio-item {
+  width: 280px;
+  margin: 28px auto;
+  /* flex-grow: 1; */
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 7px 0px;
+  border-radius: 4px;
+}
+
+.portafolio-item h2,
+.portafolio-item h3
+{
+  margin: 6px;
+  text-align: center;
+  
+}
+.project a,
+.portafolio-item h2 a{
+  text-decoration: none;
+  cursor:pointer;
+  color:black;
+  transition: all 300ms;
+
+}
+
+.portafolio-item h2 a:hover,
+.project a:hover{
+  color:orangered;
+}
+
+.portafolio-item h3 {
+  color: gray;
+  font-size: 18px;
+}
+.project p,
+.portafolio-item p{
+  margin:10px;
+  color:gray;
+  display: block;
+}
+
+.portafolio-item img{
+  width: 160px;
+  border-radius: 4px;
+  transition: all 600ms; 
+}
+
+.portafolio-item img:hover {
+  width: 200px;
+  border: 1px solid black;
+}
+
+/* PAGINA DE PROYECTOS */
+.project {
+  text-align: left;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.project--heading {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.project--img{
+  width: 100%;
+  border-radius: 4px;
+  height: 500px;
+  box-shadow: 0px 7px 14px gray;
+}
+
+/* PIE DE PAGINA */
+.footer {
+  min-height: 50px;
+  line-height: 50px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  color:#555;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: end;
+  border-top: 1px solid black;
+}
